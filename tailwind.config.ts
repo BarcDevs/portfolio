@@ -12,7 +12,6 @@ const config: Config = {
     // defaultLineHeights: true,
     // standardFontWeights: true
   },
-  purge: [],
   target: "relaxed",
   prefix: "",
   important: false,
@@ -29,6 +28,7 @@ const config: Config = {
       current: "currentColor",
       black: "#000",
       white: "#fff",
+      linkedin: "#0077b5",
       gray: {
         "100": "#f7fafc",
         "200": "#edf2f7",
@@ -104,7 +104,7 @@ const config: Config = {
         "600": "#3182ce",
         "700": "#2b6cb0",
         "800": "#2c5282",
-        "900": "#2a4365"
+        "900": "#2a4365",
       },
       indigo: {
         "100": "#ebf4ff",
