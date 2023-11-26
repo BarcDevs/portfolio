@@ -16,7 +16,7 @@ const Card = ({name, title, social: {github, twitter, email, dribble, linkedin}}
             <div className="">
                 <Image
                     className="w-32 mx-auto shadow-xl rounded-full"
-                    src={'/images/profile.png'}
+                    src={'/images/BAR-DEVS-logos.jpeg'}
                     alt="Profile face"
                     width={100}
                     height={100}
