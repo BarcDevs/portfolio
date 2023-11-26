@@ -38,7 +38,7 @@ const Card = ({name, title, social: {github, twitter, email, dribble, linkedin}}
                     {twitter &&
                         <SocialLink name="Twitter" link={twitter} color={'blue-500'} Icon={FaTwitter}/>}
                     {email &&
-                        <SocialLink name="Email" link={email} color={'teal-500'} Icon={FaRegEnvelope}/>}
+                        <SocialLink name="Email" link={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`} color={'teal-500'} Icon={FaRegEnvelope}/>}
                 </div>
             </div>
         </div>
