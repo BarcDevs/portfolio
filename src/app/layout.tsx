@@ -3,6 +3,8 @@ import { FC } from 'react'
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono, Inter } from 'next/font/google'
 
+import { Analytics } from '@vercel/analytics/next'
+
 import { LayoutProps } from '@/types/global'
 
 import { meta } from '@/constants/metadata'
@@ -34,6 +36,7 @@ const RootLayout: FC<LayoutProps> = ({
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
     >
     {children}
+    <Analytics/>
     </body>
     </html>
 )
