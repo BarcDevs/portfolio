@@ -4,7 +4,6 @@ import {
     useEffect
 } from 'react'
 
-import DownloadCvButton from '@/components/nav/download-cv-button'
 import { ThemeButton } from '@/components/nav/theme-button'
 
 type ButtonsProps = {
@@ -26,7 +25,6 @@ export const Buttons: FC<ButtonsProps> = ({
     return (
         <div className="flex items-center gap-2">
             <ThemeButton/>
-            <DownloadCvButton/>
         </div>
     )
 }
