@@ -50,7 +50,7 @@ export const experiences: Experience[] = [
             'Designed AI-driven features for patient rehabilitation workflows',
             'Built scalable architecture for healthcare compliance'
         ],
-        techStack: ['React', 'TypeScript', 'Node.js', 'AI integration', 'PostgresQL'],
+        techStack: ['React', 'TypeScript', 'Node.js', 'AI integration', 'PostgreSQL'],
         details: [
             'Leading end-to-end development of healthcare platform',
             'Implementing AI-driven patient assessment tools',
