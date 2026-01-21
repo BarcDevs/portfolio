@@ -1,27 +1,10 @@
-import {
-    Dispatch, FC,
-    SetStateAction,
-    useEffect
-} from 'react'
-
 import { ThemeButton } from '@/components/nav/theme-button'
 
-type ButtonsProps = {
-    setScrolled: Dispatch<SetStateAction<boolean>>
-}
+import { useScroll } from '@/hooks/use-scroll'
 
-export const Buttons: FC<ButtonsProps> = ({
-    setScrolled
-}) => {
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 50)
-        }
-
-        window.addEventListener('scroll', handleScroll)
-        return () => window.removeEventListener('scroll', handleScroll)
-    }, [])
-
+export const Buttons = ({}) => {
+    useScroll()
+    
     return (
         <div className="flex items-center gap-2">
             <ThemeButton/>

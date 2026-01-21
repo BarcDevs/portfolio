@@ -1,5 +1,6 @@
 'use client'
 
+import { useScroll } from '@/hooks/use-scroll'
 import { useState } from 'react'
 
 import { Buttons } from '@/components/nav/buttons'
@@ -8,7 +9,7 @@ import NavLinks from '@/components/nav/nav-links'
 import { personalData } from '@/config/personal-data'
 
 export const Navbar = () => {
-    const [scrolled, setScrolled] = useState(false)
+    const { scrolled } = useScroll()
 
     return (
         <nav
@@ -25,7 +26,7 @@ export const Navbar = () => {
 
                     <NavLinks/>
 
-                    <Buttons setScrolled={setScrolled}/>
+                    <Buttons/>
                 </div>
             </div>
         </nav>
