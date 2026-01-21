@@ -3,7 +3,7 @@ import Section from '@/components/section'
 
 import { projects } from '@/constants/projects'
 
-export const ProjectsSection = () => (
+const ProjectsSection = () => (
     <Section
         id="projects"
         headline={'Featured Projects'}
@@ -19,3 +19,5 @@ export const ProjectsSection = () => (
         </div>
     </Section>
 )
+
+export default ProjectsSection

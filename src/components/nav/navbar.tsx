@@ -1,13 +1,13 @@
 'use client'
 
-import { Buttons } from '@/components/nav/buttons'
+import Buttons from '@/components/nav/buttons'
 import NavLinks from '@/components/nav/nav-links'
 
 import { useScroll } from '@/hooks/use-scroll'
 
 import { personalData } from '@/config/personal-data'
 
-export const Navbar = () => {
+const Navbar = () => {
     const { scrolled } = useScroll()
 
     return (
@@ -31,3 +31,5 @@ export const Navbar = () => {
         </nav>
     )
 }
+
+export default Navbar

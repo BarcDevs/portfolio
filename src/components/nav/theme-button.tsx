@@ -4,7 +4,7 @@ import { Moon, Sun } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 
-export const ThemeButton = () => {
+const ThemeButton = () => {
     const [isDark, setIsDark] = useState(false)
 
     const toggleTheme = () => {
@@ -39,3 +39,5 @@ export const ThemeButton = () => {
         </Button>
     )
 }
+
+export default ThemeButton

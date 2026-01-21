@@ -6,7 +6,7 @@ import Section from '@/components/section'
 
 import { experiences } from '@/constants/experiences'
 
-export const ExperienceSection = () => (
+const ExperienceSection = () => (
     <Section
         id={'experience'}
         bgMuted
@@ -28,3 +28,5 @@ export const ExperienceSection = () => (
         </div>
     </Section>
 )
+
+export default ExperienceSection

@@ -1,8 +1,8 @@
-import { ThemeButton } from '@/components/nav/theme-button'
+import ThemeButton from '@/components/nav/theme-button'
 
 import { useScroll } from '@/hooks/use-scroll'
 
-export const Buttons = ({}) => {
+const Buttons = ({}) => {
     useScroll()
     
     return (
@@ -11,3 +11,5 @@ export const Buttons = ({}) => {
         </div>
     )
 }
+
+export default Buttons
