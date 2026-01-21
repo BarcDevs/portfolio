@@ -23,24 +23,6 @@ export const experiences: Experience[] = [
         ]
     },
     {
-        company: 'TechTreasure',
-        role: 'Full-Stack Developer',
-        period: '2023-2024',
-        brief: 'Full-stack e-commerce platform from concept to production',
-        achievements: [
-            'Developed complete platform from concept to production-ready application',
-            'Integrated Stripe payment processing',
-            'Implemented multilingual support for international users'
-        ],
-        techStack: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-        details: [
-            'Designed and implemented full e-commerce architecture',
-            'Built secure payment processing with Stripe integration',
-            'Created responsive UI with excellent user experience',
-            'Implemented internationalization for multiple languages'
-        ]
-    },
-    {
         company: 'HealEase',
         role: 'Full-Stack Developer',
         period: '2024-In Development',
@@ -56,6 +38,24 @@ export const experiences: Experience[] = [
             'Implementing AI-driven patient assessment tools',
             'Ensuring HIPAA compliance and data security',
             'Building scalable microservices architecture'
+        ]
+    },
+    {
+        company: 'TechTreasure',
+        role: 'Full-Stack Developer',
+        period: '2023-2024',
+        brief: 'Full-stack e-commerce platform from concept to production',
+        achievements: [
+            'Developed complete platform from concept to production-ready application',
+            'Integrated Stripe payment processing',
+            'Implemented multilingual support for international users'
+        ],
+        techStack: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+        details: [
+            'Designed and implemented full e-commerce architecture',
+            'Built secure payment processing with Stripe integration',
+            'Created responsive UI with excellent user experience',
+            'Implemented internationalization for multiple languages'
         ]
     }
 ]
