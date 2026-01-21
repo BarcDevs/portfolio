@@ -19,7 +19,6 @@ const ExperienceDetailsExpand: FC<ExperienceDetailsExpandProps> = ({
         onClick={toggleExpand}
         className="gap-2"
     >
-        <ChevronUp className="h-4 w-4"/>
         {isExpanded ?
             <ChevronUp className="h-4 w-4"/> :
             <ChevronDown className="h-4 w-4"/>
