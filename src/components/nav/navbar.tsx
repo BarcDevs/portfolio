@@ -1,10 +1,9 @@
 'use client'
 
-import { useScroll } from '@/hooks/use-scroll'
-import { useState } from 'react'
-
 import { Buttons } from '@/components/nav/buttons'
 import NavLinks from '@/components/nav/nav-links'
+
+import { useScroll } from '@/hooks/use-scroll'
 
 import { personalData } from '@/config/personal-data'
 
