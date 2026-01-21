@@ -18,6 +18,28 @@ export const projects: Project[] = [
         links: {}
     },
     {
+        name: 'HealEase',
+        tagline: 'AI-Powered Rehabilitation Platform',
+        description:
+            'Healthcare platform designed for severely injured patients ' +
+            'with AI-driven rehabilitation workflows. Features ' +
+            'scalable architecture built for healthcare compliance and patient-centered design.',
+        features: [
+            'AI-driven patient assessment and recommendations',
+            'Rehabilitation progress tracking',
+            'Patient and provider dashboards'
+        ],
+        techStack: ['React', 'TypeScript', 'Node.js', 'PostgerSQL', 'AI/ML', 'TailwindCSS'],
+        timeline: '2024-Ongoing',
+        links: {
+            github: [
+                'https://github.com/BarcDevs/HealEase--client',
+                'https://github.com/BarcDevs/HealEase--server'
+            ]
+        },
+        status: 'In Development'
+    },
+    {
         name: 'TechTreasure',
         tagline: 'Full-Stack E-Commerce Platform',
         description:
@@ -39,27 +61,5 @@ export const projects: Project[] = [
                 'https://github.com/BarcDevs/TechTreasure--server'
             ]
         }
-    },
-    {
-        name: 'HealEase',
-        tagline: 'AI-Powered Rehabilitation Platform',
-        description:
-            'Healthcare platform designed for severely injured patients ' +
-            'with AI-driven rehabilitation workflows. Features ' +
-            'scalable architecture built for healthcare compliance and patient-centered design.',
-        features: [
-            'AI-driven patient assessment and recommendations',
-            'Rehabilitation progress tracking',
-            'Patient and provider dashboards'
-        ],
-        techStack: ['React', 'TypeScript', 'Node.js', 'PostgerSQL', 'AI/ML', 'TailwindCSS'],
-        timeline: '2024-Ongoing',
-        links: {
-            github: [
-                'https://github.com/BarcDevs/HealEase--client',
-                'https://github.com/BarcDevs/HealEase--server'
-            ]
-        },
-        status: 'In Development'
     }
 ]
