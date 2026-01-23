@@ -8,22 +8,35 @@ const ThemeButton = () => {
     const [isDark, setIsDark] = useState(false)
 
     const toggleTheme = () => {
-        document.documentElement.classList.toggle('dark')
-        const newIsDark =
-            document.documentElement.classList.contains('dark')
-        setIsDark(newIsDark)
+        document.documentElement
+            .classList.toggle('dark')
 
-        localStorage.setItem('theme',
+        const newIsDark = document.documentElement
+            .classList.contains('dark')
+
+        setIsDark(newIsDark)
+        localStorage.setItem(
+            'theme',
             newIsDark ? 'dark' : 'light'
         )
     }
 
     useEffect(() => {
         const savedTheme = localStorage.getItem('theme')
-        const isDarkMode = savedTheme === 'dark'
+        const systemPrefersDark = window
+            .matchMedia('(prefers-color-scheme: dark)').matches
+
+        const isDarkMode = savedTheme
+            ? savedTheme === 'dark'
+            : systemPrefersDark
+
         setIsDark(isDarkMode)
-        if ( isDarkMode )
+
+        if ( isDarkMode ) {
             document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
     }, [])
 
     return (
@@ -33,9 +46,11 @@ const ThemeButton = () => {
             onClick={toggleTheme}
             aria-label="Toggle theme"
         >
-            {isDark ?
-                <Sun className="h-5 w-5"/> :
-                <Moon className="h-5 w-5"/>}
+            {isDark ? (
+                <Sun className="h-5 w-5"/>
+            ) : (
+                <Moon className="h-5 w-5"/>
+            )}
         </Button>
     )
 }
