@@ -5,7 +5,7 @@ export const experiences: Experience[] = [
         company: 'Workonit.ai',
         role: 'Full-Stack Developer',
         period: '2024-2025',
-        brief: 'Built and enhanced 3 AI-driven projects with advanced job platform features',
+        brief: 'Built and enhanced 2 AI-driven projects with advanced job platform features',
         achievements: [
             'Developed AI-powered job platform features ' +
             '(job description generation, smart tagging, ' +

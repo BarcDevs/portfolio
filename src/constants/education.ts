@@ -4,7 +4,7 @@ export const education: Education[] = [
     {
         institution: 'Ariel University',
         degree: 'Software Engineering Student',
-        period: '2022-2023',
+        period: '2022-2024',
         focus: 'Full-stack engineering, algorithms, data structures',
         notableProject: 'TechTreasure (React, Node.js, MongoDB, Stripe integration)'
     },

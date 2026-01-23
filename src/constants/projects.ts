@@ -31,7 +31,7 @@ export const projects: Project[] = [
             'Rehabilitation progress tracking',
             'Patient and provider dashboards'
         ],
-        techStack: ['React', 'TypeScript', 'Node.js', 'PostgerSQL', 'AI/ML', 'TailwindCSS'],
+        techStack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'AI/ML', 'TailwindCSS'],
         timeline: '2024-Ongoing',
         links: {
             github: [
@@ -55,7 +55,7 @@ export const projects: Project[] = [
             'Responsive shopping cart and checkout',
             'Product catalog with search and filtering'
         ],
-        techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe'],
+        techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe', 'REST API'],
         timeline: '2023-2024',
         links: {
             github: [
