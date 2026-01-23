@@ -7,6 +7,7 @@ const NavLinks = ({}) => (
         {Object.values(navLinks)
             .map((link) => (
                 <Link
+                    key={link.name}
                     href={link.href}
                     className="text-muted-foreground hover:text-primary transition-colors"
                 >

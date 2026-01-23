@@ -35,6 +35,7 @@ const ProjectLinks: FC<ProjectLinksProps> = ({ links }) => {
                 <>
                     {github.map(link =>
                         <ProjectLink
+                            key={link}
                             link={link}
                             Icon={Github}
                             label={

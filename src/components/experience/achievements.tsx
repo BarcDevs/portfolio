@@ -19,8 +19,8 @@ const Achievements: FC<AchievementsProps> = ({
                 >
                     <span className="text-primary">•</span>
                     <span>
-                                    {achievement}
-                                </span>
+                        {achievement}
+                    </span>
                 </li>
             ))}
         </ul>

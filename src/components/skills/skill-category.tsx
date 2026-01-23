@@ -26,7 +26,10 @@ const SkillCategory: FC<SkillProps> = ({ category }) => (
         </CardHeader>
         <CardContent className="space-y-4">
             {category.skills.map((skill) => (
-                <Skill skill={skill}/>
+                <Skill
+                    key={skill.name}
+                    skill={skill}
+                />
             ))}
         </CardContent>
     </Card>
