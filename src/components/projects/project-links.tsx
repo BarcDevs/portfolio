@@ -13,15 +13,15 @@ type ProjectLinksProps = {
 }
 
 const ProjectLinks: FC<ProjectLinksProps> = ({ links }) => {
-    const { demo, github, portfolio } = links
+    const { live, github, portfolio } = links
 
     return (
         <div className="flex gap-2">
-            {demo || portfolio && (
+            {(live || portfolio) && (
                 <ProjectLink
-                    link={demo || portfolio}
+                    link={live || portfolio!}
                     Icon={ExternalLink}
-                    label={demo ? 'Demo' : 'Portfolio'}
+                    label={live ? 'View Live' : 'Portfolio'}
                 />
             )}
             {github && github === typeof String && (

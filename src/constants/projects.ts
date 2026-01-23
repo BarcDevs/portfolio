@@ -15,7 +15,9 @@ export const projects: Project[] = [
         ],
         techStack: ['React', 'Node.js', 'AI/ML', 'MongoDB'],
         timeline: '2024-2025',
-        links: {}
+        links: {
+            live: 'https://dev.drushimavodot.co.il'
+        }
     },
     {
         name: 'HealEase',

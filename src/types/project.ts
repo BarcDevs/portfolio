@@ -1,5 +1,5 @@
 export type ProjectLink = {
-    demo?: string
+    live?: string
     github?: string | string[]
     portfolio?: string
 }
