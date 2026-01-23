@@ -1,55 +1,37 @@
+import {
+    Code2,
+    Database,
+    Server,
+    Sparkles,
+    Wrench
+} from 'lucide-react'
+
 import { SkillCategory } from '@/types/skills'
 
 export const skillCategories: SkillCategory[] = [
     {
         title: 'Frontend',
-        icon: '🎨',
-        skills: [
-            { name: 'React', level: 'Expert' },
-            { name: 'TypeScript', level: 'Expert' },
-            { name: 'Next.js', level: 'Advanced' },
-            { name: 'Tailwind CSS', level: 'Expert' },
-            { name: 'Shadcn UI', level: 'Advanced' }
-        ]
+        icon: Code2,
+        skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS']
     },
     {
         title: 'Backend',
-        icon: '⚙️',
-        skills: [
-            { name: 'Node.js', level: 'Expert' },
-            { name: 'NestJS', level: 'Intermediate' },
-            { name: 'RESTful APIs', level: 'Advanced' },
-            { name: 'Authentication & Security', level: 'Advanced' }
-        ]
+        icon: Server,
+        skills: ['Node.js', 'RESTful APIs', 'Authentication & Security']
     },
     {
         title: 'Databases',
-        icon: '💾',
-        skills: [
-            { name: 'MongoDB', level: 'Advanced' },
-            { name: 'SQL', level: 'Intermediate' },
-            { name: 'Database Design', level: 'Advanced' }
-        ]
+        icon: Database,
+        skills: ['MongoDB', 'SQL', 'Database Design']
     },
     {
         title: 'Tools & Platforms',
-        icon: '🛠️',
-        skills: [
-            { name: 'Git & GitHub', level: 'Advanced' },
-            { name: 'WebStorm', level: 'Expert' },
-            { name: 'Vercel', level: 'Advanced' },
-            { name: 'Stripe Integration', level: 'Advanced' },
-            { name: 'Unity Integration', level: 'Intermediate' }
-        ]
+        icon: Wrench,
+        skills: ['Git & GitHub', 'Stripe Integration', 'Unity Integration']
     },
     {
         title: 'Specializations',
-        icon: '🚀',
-        skills: [
-            { name: 'AI-Assisted Development', level: 'Advanced' },
-            { name: 'Code Refactoring', level: 'Expert' },
-            { name: 'System Architecture', level: 'Advanced' },
-            { name: 'Scalability & Performance', level: 'Advanced' }
-        ]
+        icon: Sparkles,
+        skills: ['AI-Assisted Development', 'Code Refactoring', 'System Architecture', 'Scalability & Performance']
     }
 ]

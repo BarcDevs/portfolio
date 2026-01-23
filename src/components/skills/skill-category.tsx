@@ -15,24 +15,25 @@ type SkillProps = {
 }
 
 const SkillCategory: FC<SkillProps> = ({ category }) => (
-    <Card className="group hover:shadow-lg transition-all">
+    <Card className="group hover:shadow-lg hover:border-primary/50 transition-all">
         <CardHeader>
             <CardTitle className="flex items-center gap-3">
-                    <span className="text-3xl">
-                        {category.icon}
-                    </span>
+                <category.icon/>
                 {category.title}
             </CardTitle>
         </CardHeader>
-        <CardContent className="space-y-4">
-            {category.skills.map((skill) => (
-                <Skill
-                    key={skill.name}
-                    skill={skill}
-                />
-            ))}
+        <CardContent>
+            <div className="flex flex-wrap gap-2">
+                {category.skills.map((skill) => (
+                    <Skill
+                        key={skill}
+                        skill={skill}
+                    />
+                ))}
+            </div>
         </CardContent>
     </Card>
+
 )
 
 export default SkillCategory
