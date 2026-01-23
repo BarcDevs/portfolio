@@ -17,7 +17,7 @@ export const skillCategories: SkillCategory[] = [
     {
         title: 'Backend',
         icon: Server,
-        skills: ['Node.js', 'RESTful APIs', 'Authentication & Security']
+        skills: ['Node.js', 'REST API', 'Authentication & Security']
     },
     {
         title: 'Databases',
