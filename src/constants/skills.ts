@@ -8,7 +8,7 @@ import {
 
 import { SkillCategory } from '@/types/skills'
 
-export const skillCategories: SkillCategory[] = [
+export const skills: SkillCategory[] = [
     {
         title: 'Frontend',
         icon: Code2,
