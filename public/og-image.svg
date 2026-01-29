@@ -1,0 +1,90 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0a0e12"/>
+  
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2332" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    
+    <!-- Gradient overlay -->
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#77c6b0;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#3e2f34;stop-opacity:0.15" />
+    </linearGradient>
+    
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#77c6b0;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#77c6b0;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Apply grid -->
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <!-- Gradient overlay -->
+  <rect width="1200" height="630" fill="url(#gradient1)"/>
+  
+  <!-- Subtle geometric accents (top right) -->
+  <circle cx="950" cy="120" r="180" fill="#77c6b0" opacity="0.03"/>
+  <circle cx="950" cy="120" r="120" fill="#77c6b0" opacity="0.04"/>
+  
+  <!-- Subtle geometric accents (bottom left) -->
+  <circle cx="250" cy="510" r="140" fill="#3e2f34" opacity="0.05"/>
+  <circle cx="250" cy="510" r="90" fill="#3e2f34" opacity="0.06"/>
+  
+  <!-- Accent line (left side) -->
+  <rect x="80" y="200" width="4" height="230" fill="url(#accent)" rx="2"/>
+  
+  <!-- Content container -->
+  <g transform="translate(110, 240)">
+    <!-- Name -->
+    <text 
+      x="0" 
+      y="0" 
+      font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" 
+      font-size="72" 
+      font-weight="700" 
+      fill="#ffffff"
+      letter-spacing="-1.5">
+      Bar Cohen
+    </text>
+    
+    <!-- Title -->
+    <text 
+      x="0" 
+      y="70" 
+      font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" 
+      font-size="42" 
+      font-weight="500" 
+      fill="#77c6b0"
+      letter-spacing="-0.5">
+      Full-Stack Engineer | AI-Powered Web Platforms
+    </text>
+    
+    <!-- Tech stack -->
+    <text 
+      x="0" 
+      y="130" 
+      font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" 
+      font-size="24" 
+      font-weight="400" 
+      fill="#8896a8"
+      letter-spacing="0.5">
+      React · TypeScript · Node.js · AI-Driven Web Platforms
+    </text>
+  </g>
+  
+  <!-- Subtle code brackets decoration (bottom right) -->
+  <text 
+    x="1040" 
+    y="560" 
+    font-family="'Courier New', monospace" 
+    font-size="48" 
+    font-weight="300" 
+    fill="#77c6b0" 
+    opacity="0.15">
+    {  }
+  </text>
+</svg>
