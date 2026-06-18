@@ -20,23 +20,26 @@ export const projects: Project[] = [
         }
     },
     {
-        name: 'HealEase',
-        tagline: 'AI-Powered Rehabilitation Platform',
+        name: 'Pulse',
+        tagline: 'AI-Powered Recovery Support Platform',
         description:
-            'Healthcare platform designed for severely injured patients ' +
-            'with AI-driven rehabilitation workflows. Features ' +
-            'scalable architecture built for healthcare compliance and patient-centered design.',
+            'Full-stack healthcare platform helping patients stay engaged ' +
+            'during post-clinical recovery, driving daily patient engagement ' +
+            'through structured check-ins, AI-generated insights, and a ' +
+            'peer support community.',
         features: [
-            'AI-driven patient assessment and recommendations',
-            'Rehabilitation progress tracking',
-            'Patient and provider dashboards'
+            'Daily mood and pain tracking with progress visualization to boost patient engagement',
+            'AI-generated insights (Google Gemini) for early detection of declining patient engagement',
+            'Community forum driving peer support and retention through posts, replies, and voting',
+            'Email/password and Google OAuth authentication with CSRF protection'
         ],
-        techStack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'AI/ML', 'TailwindCSS'],
+        techStack: ['Next.js', 'React', 'TypeScript', 'TanStack Query', 'TailwindCSS', 'shadcn/ui', 'Node.js', 'Express', 'PostgreSQL', 'Prisma', 'Google Gemini API'],
         timeline: '2024-Ongoing',
         links: {
+            live: 'https://pulse-rehab.vercel.app',
             github: [
-                'https://github.com/BarcDevs/HealEase--client',
-                'https://github.com/BarcDevs/HealEase--server'
+                'https://github.com/BarcDevs/Pulse--client',
+                'https://github.com/BarcDevs/Pulse--server'
             ]
         },
         status: 'In Development'

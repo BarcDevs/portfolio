@@ -23,21 +23,22 @@ export const experiences: Experience[] = [
         ]
     },
     {
-        company: 'HealEase',
+        company: 'Pulse',
         role: 'Full-Stack Developer',
         period: '2024-In Development',
-        brief: 'AI-powered rehabilitation platform for severely injured patients',
+        brief: 'AI-powered recovery platform driving patient engagement through daily check-ins and community support',
         achievements: [
-            'Independently managed full-stack development to functional POC',
-            'Designed AI-driven features for patient rehabilitation workflows',
-            'Built scalable architecture for healthcare compliance'
+            'Independently shipped and deployed a full-stack healthcare platform to production',
+            'Drove patient engagement through a daily check-in system with mood/pain tracking and progress visualization',
+            'Grew peer support through a community forum with posts, replies, voting, and tag-based filtering',
+            'Strengthened account security with dual authentication (email/password and Google OAuth) and CSRF protection'
         ],
-        techStack: ['React', 'TypeScript', 'Node.js', 'AI integration', 'PostgreSQL'],
+        techStack: ['Next.js', 'React', 'TypeScript', 'TanStack Query', 'Node.js', 'Express', 'PostgreSQL', 'Prisma', 'AI integration'],
         details: [
-            'Leading end-to-end development of healthcare platform',
-            'Implementing AI-driven patient assessment tools',
-            'Ensuring HIPAA compliance and data security',
-            'Building scalable microservices architecture'
+            'Owning end-to-end development of a healthcare platform from architecture to deployment',
+            'Delivering AI-generated insights (Google Gemini) for early detection of declining patient engagement',
+            'Hardening session security via HTTP-only JWT cookies and CSRF token validation',
+            'Architecting with Next.js App Router and TanStack Query for scalable state management'
         ]
     },
     {
