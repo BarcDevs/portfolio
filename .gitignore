@@ -44,4 +44,4 @@ next-env.d.ts
 .qodo
 .ai
 .claude
-package-lock.json
+graphify-out
