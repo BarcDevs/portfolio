@@ -5,18 +5,18 @@ export const experiences: Experience[] = [
         company: 'Workonit.ai',
         role: 'Full-Stack Developer',
         period: '2024-2025',
-        brief: 'Built and enhanced 2 AI-driven projects with advanced job platform features',
+        brief: 'Drove growth of an AI-driven recruitment platform through full-stack feature delivery and system-level improvements',
         achievements: [
-            'Developed AI-powered job platform features ' +
-            '(job description generation, smart tagging, ' +
-            'chatbot search, CV optimization)',
-            'Refactored AI-generated and legacy code for ' +
-            'improved architecture, security, and scalability',
+            'Built AI-powered recruitment features ' +
+            '(automated job description generation, intelligent tagging, ' +
+            'chatbot-assisted job search, AI-based CV optimization)',
+            'Expanded job posting reach by integrating distribution to 22 targeted Facebook groups for automated, AI-assisted posting',
+            'Refactored AI-generated and legacy code, improving system architecture, security, scalability, and long-term maintainability',
             'Integrated customizable Unity-based games for enhanced engagement'
         ],
         techStack: ['React', 'Node.js', 'MongoDB', 'AI Integration', 'Unity integration'],
         details: [
-            'Led full-stack development across multiple AI-driven projects',
+            'Contributed to backend and frontend feature implementation across an AI-driven recruitment platform',
             'Implemented secure authentication and authorization systems',
             'Optimized database queries and API performance',
             'Collaborated with cross-functional teams to deliver features'
