@@ -115,7 +115,7 @@ describe('Button', () => {
 
   it('applies custom className alongside variant styles', () => {
     render(
-      <Button variant="primary" className="custom-class">
+      <Button variant="default" className="custom-class">
         Custom
       </Button>
     )
