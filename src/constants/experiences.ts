@@ -5,39 +5,40 @@ export const experiences: Experience[] = [
         company: 'Workonit.ai',
         role: 'Full-Stack Developer',
         period: '2024-2025',
-        brief: 'Built and enhanced 2 AI-driven projects with advanced job platform features',
+        brief: 'Drove growth of an AI-driven recruitment platform through full-stack feature delivery and system-level improvements',
         achievements: [
-            'Developed AI-powered job platform features ' +
-            '(job description generation, smart tagging, ' +
-            'chatbot search, CV optimization)',
-            'Refactored AI-generated and legacy code for ' +
-            'improved architecture, security, and scalability',
+            'Built AI-powered recruitment features ' +
+            '(automated job description generation, intelligent tagging, ' +
+            'chatbot-assisted job search, AI-based CV optimization)',
+            'Expanded job posting reach by integrating distribution to 22 targeted Facebook groups for automated, AI-assisted posting',
+            'Refactored AI-generated and legacy code, improving system architecture, security, scalability, and long-term maintainability',
             'Integrated customizable Unity-based games for enhanced engagement'
         ],
         techStack: ['React', 'Node.js', 'MongoDB', 'AI Integration', 'Unity integration'],
         details: [
-            'Led full-stack development across multiple AI-driven projects',
+            'Contributed to backend and frontend feature implementation across an AI-driven recruitment platform',
             'Implemented secure authentication and authorization systems',
             'Optimized database queries and API performance',
             'Collaborated with cross-functional teams to deliver features'
         ]
     },
     {
-        company: 'HealEase',
+        company: 'Pulse',
         role: 'Full-Stack Developer',
         period: '2024-In Development',
-        brief: 'AI-powered rehabilitation platform for severely injured patients',
+        brief: 'AI-powered recovery platform driving patient engagement through daily check-ins and community support',
         achievements: [
-            'Independently managed full-stack development to functional POC',
-            'Designed AI-driven features for patient rehabilitation workflows',
-            'Built scalable architecture for healthcare compliance'
+            'Independently shipped and deployed a full-stack healthcare platform to production',
+            'Drove patient engagement through a daily check-in system with mood/pain tracking and progress visualization',
+            'Grew peer support through a community forum with posts, replies, voting, and tag-based filtering',
+            'Strengthened account security with dual authentication (email/password and Google OAuth) and CSRF protection'
         ],
-        techStack: ['React', 'TypeScript', 'Node.js', 'AI integration', 'PostgreSQL'],
+        techStack: ['Next.js', 'React', 'TypeScript', 'TanStack Query', 'Node.js', 'Express', 'PostgreSQL', 'Prisma', 'AI integration'],
         details: [
-            'Leading end-to-end development of healthcare platform',
-            'Implementing AI-driven patient assessment tools',
-            'Ensuring HIPAA compliance and data security',
-            'Building scalable microservices architecture'
+            'Owning end-to-end development of a healthcare platform from architecture to deployment',
+            'Delivering AI-generated insights (Google Gemini) for early detection of declining patient engagement',
+            'Hardening session security via HTTP-only JWT cookies and CSRF token validation',
+            'Architecting with Next.js App Router and TanStack Query for scalable state management'
         ]
     },
     {
