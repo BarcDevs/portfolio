@@ -1,4 +1,7 @@
+import { ReactNode } from 'react'
+
 import { render, screen } from '@testing-library/react'
+
 import SkillsSection from './skills-section'
 
 jest.mock('@/constants/skills', () => ({
@@ -16,31 +19,33 @@ jest.mock('@/constants/skills', () => ({
   ],
 }))
 
-jest.mock('@/components/skills/skill-category', () => {
-  return {
-    __esModule: true,
-    default: ({ category }: any) =>
-      require('react').createElement(
-        'div',
-        { 'data-testid': `category-${category.title}` },
-        category.title
-      ),
-  }
-})
+jest.mock('@/components/skills/skill-category', () => ({
+  __esModule: true,
+  default: ({ category }: { category: { title: string } }) => (
+    <div data-testid={`category-${category.title}`}>{category.title}</div>
+  ),
+}))
 
-jest.mock('@/components/section', () => {
-  return {
-    __esModule: true,
-    default: ({ id, headline, description, children }: any) =>
-      require('react').createElement(
-        'section',
-        { id },
-        require('react').createElement('h2', null, headline),
-        require('react').createElement('p', null, description),
-        children
-      ),
-  }
-})
+jest.mock('@/components/section', () => ({
+  __esModule: true,
+  default: ({
+    id,
+    headline,
+    description,
+    children,
+  }: {
+    id: string
+    headline: string
+    description: string
+    children: ReactNode
+  }) => (
+    <section id={id}>
+      <h2>{headline}</h2>
+      <p>{description}</p>
+      {children}
+    </section>
+  ),
+}))
 
 describe('SkillsSection', () => {
   it('renders Section component', () => {

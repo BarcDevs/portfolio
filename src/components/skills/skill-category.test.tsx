@@ -1,7 +1,10 @@
-import { render, screen } from '@testing-library/react'
-import SkillCategory from './skill-category'
-import { SkillCategory as SkillCategoryType } from '@/types/skills'
 import { Code2, Database } from 'lucide-react'
+
+import { render, screen } from '@testing-library/react'
+
+import { SkillCategory as SkillCategoryType } from '@/types/skills'
+
+import SkillCategory from './skill-category'
 
 const mockSkillCategory: SkillCategoryType = {
   title: 'Frontend',
@@ -87,7 +90,7 @@ describe('SkillCategory', () => {
       skills: ['MongoDB', 'SQL'],
     }
 
-    const { container } = render(
+    render(
       <SkillCategory category={categoryWithDifferentIcon} />
     )
     expect(screen.getByText('Backend')).toBeInTheDocument()

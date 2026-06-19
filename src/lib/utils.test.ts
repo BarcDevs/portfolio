@@ -25,7 +25,8 @@ describe('cn()', () => {
   })
 
   it('filters out false/null/undefined values', () => {
-    const result = cn('base', false && 'hidden', null, undefined, 'visible')
+    const isHidden = false
+    const result = cn('base', isHidden && 'hidden', null, undefined, 'visible')
     expect(result).toBe('base visible')
   })
 

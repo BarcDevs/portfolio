@@ -1,16 +1,20 @@
 import { render, screen } from '@testing-library/react'
-import Navbar from './navbar'
+
 import { personalData } from '@/config/personal-data'
+
+import Navbar from './navbar'
 
 jest.mock('@/hooks/use-scroll', () => ({
   useScroll: jest.fn(),
 }))
 
 jest.mock('@/components/nav/nav-links', () => ({
+  __esModule: true,
   default: () => <div data-testid="nav-links">Nav Links</div>,
 }))
 
 jest.mock('@/components/nav/buttons', () => ({
+  __esModule: true,
   default: () => <div data-testid="buttons">Buttons</div>,
 }))
 

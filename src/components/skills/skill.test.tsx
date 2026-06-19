@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react'
+
 import Skill from './skill'
 
 describe('Skill', () => {

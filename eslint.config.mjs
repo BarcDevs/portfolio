@@ -17,6 +17,18 @@ export default [
         ]
     },
     {
+        files: ['*.config.js'],
+        languageOptions: {
+            globals: {
+                require: 'readonly',
+                module: 'readonly'
+            }
+        },
+        rules: {
+            '@typescript-eslint/no-require-imports': 'off'
+        }
+    },
+    {
         files: ['**/*.{js,jsx,ts,tsx}'],
         plugins: {
             react: reactPlugin,

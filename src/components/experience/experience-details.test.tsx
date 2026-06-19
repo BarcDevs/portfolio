@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
+
 import ExperienceDetails from './experience-details'
 
 jest.mock('@/components/experience/experience-details-expand', () => ({
+  __esModule: true,
   default: ({
     isExpanded,
     toggleExpand,

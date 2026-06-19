@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react'
+
 import ProjectDetails from './project-details'
 
 describe('ProjectDetails', () => {
