@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 
 export const meta: Metadata = {
+    metadataBase: new URL('https://bardevs-portfolio.vercel.app'),
     title: 'Bar Cohen - Full-Stack Software Engineer | React, TypeScript, Node.js',
     description:
         'Full-Stack Software Engineer with 2+ years experience ' +
